@@ -1,0 +1,217 @@
+BACKUP ~kit_rev\backup~ // location to store files for uninstall purposes
+
+AUTHOR ~marco.montagnoli83@hotmail.it~ // display email address if install fails
+
+VERSION ~V1 Beta 1~
+
+/* README ~kit_rev\readme-kit_rev.html~ */
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+LANGUAGE ~English~ ~languages\english~
+                   ~kit_rev\languages\english\english.tra~
+                   ~kit_rev/languages/english/description_updates.tra~
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Kit Revisions------*/
+
+BEGIN ~Kit Revisions by Demivrgvs~
+
+COPY    ~kit_rev/data/revised_grandmastery~    ~override~  // Grandmastery Revision
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ TRUE FIGHTER ------*/
+
+STRING_SET ~9556~ @1 // Fighter description
+COPY ~kit_rev/data/fighters/true_fighter/clabfi01.2da~     ~override~
+
+COPY ~kit_rev/data/fighters/true_fighter/dvcl111.spl~     ~override~  // Weapon Training
+
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112.spl~     ~override~  // Called Shot
+  SAY NAME1 @101
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112.2da~     ~override~  // Maneuvers list
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112a.spl~     ~override~  // Arm hit - Disarm
+  SAY NAME1 @102
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112a.eff~     ~override~
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112b.spl~     ~override~
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112x.spl~     ~override~  // Leg hit - Trip
+  SAY NAME1 @103
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112x.eff~     ~override~
+COPY ~kit_rev/data/fighters/true_fighter/dvcl112y.spl~     ~override~
+
+COPY ~kit_rev/data/fighters/true_fighter/dvcl113.spl~     ~override~  // Offensive Stance
+  SAY NAME1 @104
+
+COPY ~kit_rev/data/fighters/true_fighter/dvcl114.spl~     ~override~  // Defensive Stance
+  SAY NAME1 @105
+
+ADD_PROJECTILE ~kit_rev/data/fighters/true_fighter/dvcl115a.pro~  // Party-friendly 15' aura
+COPY ~kit_rev/data/fighters/true_fighter/dvcl115a.spl~     ~override~  // Tactician
+  WRITE_SHORT 0x98 %dvcl115a%
+COPY ~kit_rev/data/fighters/true_fighter/dvcl115a.eff~     ~override~
+COPY ~kit_rev/data/fighters/true_fighter/dvcl115a.spl~     ~override~
+
+COPY ~kit_rev/data/fighters/true_fighter/dvcl116a.spl~     ~override~  // Expert Tactician
+  WRITE_SHORT 0x98 %dvcl115a%
+COPY ~kit_rev/data/fighters/true_fighter/dvcl116a.eff~     ~override~
+COPY ~kit_rev/data/fighters/true_fighter/dvcl116a.spl~     ~override~
+
+COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.spl~     ~override~  // Master Tactician
+  WRITE_SHORT 0x98 %dvcl115a%
+COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.eff~     ~override~
+COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.spl~     ~override~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ BARBARIAN ------*/
+
+STRING_SET ~45869~ @2 // Barbarian description
+COPY ~kit_rev/data/fighters/barbarian/clabfi05.2da~     ~override~
+
+// COPY ~kit_rev/data/fighters/barbarian/spcl151.spl~     ~override~  // Fast Movement
+
+COPY ~kit_rev/data/fighters/barbarian/spcl152.spl~     ~override~  // Barbarian Rage
+  SAY NAME1 @106
+ADD_PROJECTILE ~kit_rev/data/fighters/barbarian/dvcl152.pro~  // Enemy-only 15' aura
+COPY ~kit_rev/data/fighters/barbarian/dvcl152.spl~     ~override~  // Feral Senses (Scent)
+  WRITE_SHORT 0x98 %dvcl152%
+COPY ~kit_rev/data/fighters/barbarian/dvcl152.eff~     ~override~
+
+COPY ~kit_rev/data/fighters/barbarian/spcl153.spl~     ~override~  // Physical Resistance (+10%)
+
+COPY ~kit_rev/data/fighters/barbarian/spcl154.spl~     ~override~  // Physical Resistance (+5%)
+
+COPY ~kit_rev/data/fighters/barbarian/dvcl155.spl~     ~override~  // Cleave
+COPY ~kit_rev/data/fighters/barbarian/dvcl155.eff~     ~override~
+COPY ~kit_rev/data/fighters/barbarian/dvcleave.spl~     ~override~
+COPY ~kit_rev/data/fighters/barbarian/dvcleave.eff~     ~override~
+
+COPY ~kit_rev/data/fighters/barbarian/dvcl156.spl~     ~override~  // Blind-Fighting
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ BERSERKER ------*/
+
+STRING_SET ~25201~ @3 // Berserker description
+COPY ~kit_rev/data/fighters/berserker/clabfi02.2da~     ~override~
+
+COPY ~kit_rev/data/fighters/berserker/spcl321.spl~     ~override~  // Berserker Rage
+  SAY NAME1 @107
+COPY ~kit_rev/data/fighters/berserker/dvcl321.spl~     ~override~  // Intimidating Rage
+  WRITE_SHORT 0x98 %dvcl152%
+COPY ~kit_rev/data/fighters/berserker/dvcl321.eff~     ~override~
+COPY ~kit_rev/data/fighters/berserker/spcl321d.spl~     ~override~  // post-rage fatigue
+
+COPY ~kit_rev/data/fighters/berserker/spcl322.spl~     ~override~  // Fast Healing
+
+COPY ~kit_rev/data/fighters/berserker/dvcl323.spl~     ~override~  // Frenzy
+COPY ~kit_rev/data/fighters/berserker/dvcl323a.spl~     ~override~
+COPY ~kit_rev/data/fighters/berserker/dvcl323a.eff~     ~override~ // 5% chance
+COPY ~kit_rev/data/fighters/berserker/dvcl323b.eff~     ~override~ // 20% chance
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ WEAPON MASTER ------*/
+
+STRING_SET ~25204~ @4 // Kensai description
+COPY ~kit_rev/data/fighters/kensai/clabfi04.2da~     ~override~
+
+COPY ~kit_rev/data/fighters/kensai/spcl141.spl~     ~override~  // Weapon Focus
+
+COPY ~kit_rev/data/fighters/kensai/spcl142.spl~     ~override~  // Canny Defense
+COPY ~kit_rev/data/fighters/kensai/dvcl145.spl~     ~override~
+
+COPY ~kit_rev/data/fighters/kensai/spcl143.spl~     ~override~  // Iaijutsu
+
+COPY ~kit_rev/data/fighters/kensai/spcl144.spl~     ~override~  // Ki Strike
+  SAY NAME1 @108
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ WIZARD SLAYER ------*/
+
+STRING_SET ~25203~ @5 // Wizard Slayer description
+COPY ~kit_rev/data/fighters/wizard_slayer/clabfi03.2da~     ~override~
+
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl131.spl~     ~override~
+  SAY NAME1 @109
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl131a.spl~     ~override~  // Disruptive Strike
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl131a.eff~     ~override~  // 
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl131b.spl~     ~override~  // Breaching Strike
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl131b.eff~     ~override~  // 
+
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl132.spl~     ~override~  // Inner Focus
+  SAY NAME1 @110
+
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl133.spl~     ~override~  // Magic Resistance (+10%)
+
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl134.spl~     ~override~  // Magic Resistance (+5%)
+
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl135.spl~     ~override~  // Iron Will
+
+COPY ~kit_rev/data/fighters/wizard_slayer/dvcl136.spl~     ~override~  // Magical Defense
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ HIGH LEVEL ABILITIES ------*/
+
+COPY ~kit_rev/data/HLAs/spcl900.spl~     ~override~  // Whirlwind Attack
+  SAY NAME1 @1001    SAY UNIDENTIFIED_DESC @1002
+
+COPY ~kit_rev/data/HLAs/spcl901.spl~     ~override~  // Greater Whirlwind Attack
+  SAY NAME1 @1003    SAY UNIDENTIFIED_DESC @1004
+
+COPY ~kit_rev/data/HLAs/spcl902.spl~     ~override~  // Deathblow
+  SAY NAME1 @1005    SAY UNIDENTIFIED_DESC @1006
+COPY ~kit_rev/data/HLAs/dvcl902.spl~     ~override~
+COPY ~kit_rev/data/HLAs/dvcl902.eff~     ~override~
+
+COPY ~kit_rev/data/HLAs/spcl903.spl~     ~override~  // Greater Deathblow
+  SAY NAME1 @1007    SAY UNIDENTIFIED_DESC @1008
+COPY ~kit_rev/data/HLAs/dvcl903.spl~     ~override~
+COPY ~kit_rev/data/HLAs/dvcl903.eff~     ~override~
+
+COPY ~kit_rev/data/HLAs/spcl904.spl~     ~override~  // Resist Magic
+  SAY NAME1 @1009    SAY UNIDENTIFIED_DESC @1010
+
+COPY ~kit_rev/data/HLAs/spcl905.spl~     ~override~  // Critical Strike
+  SAY NAME1 @1011    SAY UNIDENTIFIED_DESC @1012
+
+COPY ~kit_rev/data/HLAs/spcl906.spl~     ~override~  // Power Attack
+  SAY NAME1 @1013    SAY UNIDENTIFIED_DESC @1014
+
+COPY ~kit_rev/data/HLAs/spcl907.spl~     ~override~  // Hardiness
+  SAY NAME1 @1015    SAY UNIDENTIFIED_DESC @1016
+
+COPY ~kit_rev/data/HLAs/spcl908.spl~     ~override~  // War Cry
+  SAY NAME1 @1017    SAY UNIDENTIFIED_DESC @1018
+
+COPY ~kit_rev/data/HLAs/spcl909.spl~     ~override~  // Greater Power Attack ("replaces" Smite)
+  SAY NAME1 @1019    SAY UNIDENTIFIED_DESC @1020
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ USABILITY PATCHES ------*/
+
+INCLUDE ~kit_rev/components/kensai_use_bracers.tpa~
+INCLUDE ~kit_rev/components/usability_patches.tpa~
+

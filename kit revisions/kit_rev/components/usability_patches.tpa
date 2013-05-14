@@ -1,0 +1,95 @@
+
+INCLUDE ~kit_rev/lib/compatibility.tpa~
+INCLUDE ~kit_rev/lib/armor_list.tpa~
+INCLUDE ~kit_rev/lib/shield_list.tpa~
+INCLUDE ~kit_rev/lib/descriptions.tpa~
+INCLUDE ~kit_rev/lib/identify_fix.tpa~
+INCLUDE ~kit_rev/lib/identify_item.tpa~
+INCLUDE ~kit_rev/lib/usability_description.tpa~
+
+//////////////////////////////////////////////
+//  descriptions
+
+DEFINE_PATCH_MACRO kensai BEGIN
+  PATCH_IF ident BEGIN
+    SPRINT add_class @100415
+    SPRINT catch_class @100416
+    LPF usable_desc INT_VAR make_usable add_where STR_VAR add_class catch_class END
+  END
+END
+
+DEFINE_PATCH_MACRO barbarian BEGIN
+  PATCH_IF ident BEGIN
+    SPRINT add_class @100417
+    SPRINT catch_class @100418
+    LPF usable_desc INT_VAR make_usable STR_VAR add_class catch_class END
+  END
+END
+
+DEFINE_PATCH_MACRO berserker BEGIN
+  PATCH_IF ident BEGIN
+    SPRINT add_class @100419
+    SPRINT catch_class @100420
+    LPF usable_desc INT_VAR make_usable add_where STR_VAR add_class catch_class END
+  END
+END
+
+DEFINE_PATCH_MACRO wizardslayer BEGIN
+  PATCH_IF ident BEGIN
+    SPRINT add_class @100421
+    SPRINT catch_class @100422
+    LPF usable_desc INT_VAR make_usable add_where STR_VAR add_class catch_class END
+  END
+END
+
+//////////////////////////////////////////////
+//  patch items
+
+COPY_EXISTING_REGEXP GLOB ~.+\.itm~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
+  LPM identify_item
+  PATCH_IF ((BYTE_AT 0x1f) & 8) = 0 BEGIN // usable by fighter
+
+    PATCH_IF ((BYTE_AT 0x2f) & 2) = 2 BEGIN // not usable by wizard slayer
+      PATCH_IF !chainmail && !medium_shield && !plate && !tower_shield BEGIN
+        WRITE_BYTE 0x2f (THIS & `2) // wizard slayer
+        make_usable=1
+        add_where=0 // do not append to the usability list
+        SPRINT text_update wizardslayer
+        LPM update_item_descriptions
+      END
+    END
+
+    make_usable=0
+    add_where=2 // append to the end of the usability list
+    PATCH_IF leather || buckler || small_shield BEGIN
+      WRITE_BYTE 0x2f (THIS | 4) // kensai
+      SPRINT text_update kensai
+      LPM update_item_descriptions
+    END
+    PATCH_IF chainmail || medium_shield BEGIN
+      WRITE_BYTE 0x2f (THIS | 4) // kensai
+      SPRINT text_update kensai
+      LPM update_item_descriptions
+      WRITE_BYTE 0x2f (THIS | 2) // wizard slayer
+      SPRINT text_update wizardslayer
+      LPM update_item_descriptions
+    END
+    PATCH_IF plate || tower_shield BEGIN
+      WRITE_BYTE 0x29 (THIS | 64) // barb
+      SPRINT text_update barbarian
+      LPM update_item_descriptions
+      WRITE_BYTE 0x2f (THIS | 4) // kensai
+      SPRINT text_update kensai
+      LPM update_item_descriptions
+      WRITE_BYTE 0x2f (THIS | 2) // wizard slayer
+      SPRINT text_update wizardslayer
+      LPM update_item_descriptions
+    END
+
+  END
+END BUT_ONLY
+
+
+
+
+

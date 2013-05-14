@@ -1,0 +1,81 @@
+
+//    !!! WARNING !!!
+//
+//  Do NOT translate this blindly! Refer to "description_updates.doc" to see which exact symbols need translation!
+//  In fact, you may want to translate DOC and then copypaste the result to TRA.
+
+
+
+// catch ~Usable by:~
+@100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
+
+// catch ~Not usable by~
+@100401 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+
+// catch any letter
+@100403 = ~[a-zA-Z]~
+
+
+// catch from kit description
+// get the string number from "kitlist.2da" table, line #3 (KENSAI), column #4 (HELP) - unless changed by mods, it's 25204
+@100413 = ~May not wear gauntlets or bracers~
+
+// replace @100413
+@100414 = ~May not wear gauntlets~
+
+// add "Kensai" to \(@100400\|@100401\)
+@100415 = ~Kensai~
+
+// catch ~Kensai~
+@100416 = ~[Kk]ensai~
+
+
+// add "Barbarian" to \(@100400\|@100401\)
+@100417 = ~Barbarian~
+
+// catch ~Barbarian~
+@100418 = ~[Bb]arbarian~
+
+
+// add "Berserker" to \(@100400\|@100401\)
+@100419 = ~Berserker~
+
+// catch ~Berserker~
+@100420 = ~[Bb]erserker~
+
+
+// add "Wizard Slayer" to \(@100400\|@100401\)
+@100421 = ~Wizard Slayer~
+
+// catch ~Wizard Slayer~
+@100422 = ~[Ww]izard[ %tab%]+[Ss]layer~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
