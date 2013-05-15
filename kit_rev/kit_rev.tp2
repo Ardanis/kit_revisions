@@ -2,7 +2,7 @@ BACKUP ~kit_rev/backup~ // location to store files for uninstall purposes
 
 AUTHOR ~marco.montagnoli83@hotmail.it~ // display email address if install fails
 
-VERSION ~Beta 3~
+VERSION ~Beta 4~
 
 /* README ~kit_rev/readme-kit_rev.html~ */
 
