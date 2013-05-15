@@ -1,0 +1,20 @@
+DEFINE_ACTION_FUNCTION ~GET_KIT_STRREF~
+  STR_VAR kit_name = ~~
+  RET kit_strref
+BEGIN
+  OUTER_SET kit_strref = 0 - 1
+  ACTION_IF (STRING_LENGTH ~%kit_name%~ > 0) BEGIN
+    COPY_EXISTING ~kitlist.2da~ ~override~
+      TO_LOWER kit_name
+      COUNT_2DA_ROWS 5 num_rows
+      FOR (row = 0; row < num_rows; row += 1) BEGIN
+        READ_2DA_ENTRY row 1 5 kit
+        TO_LOWER kit
+        PATCH_IF (~%kit%~ STRING_EQUAL ~%kit_name%~) BEGIN
+          READ_2DA_ENTRY row 4 5 kit_strref
+          SET row = num_rows
+        END
+      END
+      BUT_ONLY
+  END
+END

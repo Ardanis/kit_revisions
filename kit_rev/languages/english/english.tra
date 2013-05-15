@@ -1,0 +1,258 @@
+@1 = ~FIGHTER:  The questing knight, the conquering overlord, the king's champion, the elite foot soldier, the hardened mercenary, and the bandit king, all are fighters. Fighters can be stalwart defenders of those in need, cruel marauders, or gutsy adventurers. Some are among the land's best souls, willing to face death for the greater good. Others are among the worst, those who have no qualms about killing for private gain, or even for sport. Fighters who are not actively adventuring may be soldiers, guards, bodyguards, champions, or criminal enforcers. An adventuring fighter might call himself a warrior, a mercenary, a thug, or simply an adventurer.
+
+Though fighters can be found in nearly every part of Faerun, those who are truly skilled are well-respected for their abilities. While many fighters operate on their own or as parts of informally organized groups, others hold themselves to a higher ideal and are part of knightly orders. These include such renowned groups as the Purple Dragons of Cormyr, the Knights Kuldar of Barakmordin, and, in the past, the Champions Vigilant of Helm.
+
+Fighters can become skilled in the use of many types of weapons and armor, and learn a variety of fighting styles and field tactics, making them highly proficient in the ways of battle and extremely versatile.
+
+Class Features:
+- Rolls d10 for hit points.
+- Can achieve grandmastery (+++++) in any weapon proficiency.
+- Can use all types of armor.
+- At 1st level, can use Offensive Stance and Defensive Stance at will.
+- At 4th level, can use Called Shot once per day, and gains one extra use of this ability for every 4 levels thereafter.
+- At 5th level, becomes proficient (+) in the use of all types of weapons.
+- At 7th level, gains an additional half attack per round. This increases to a whole attack per round bonus at 13th level.
+- At 10th level, gains Improved Called Shot.
+- At 11th level, gains the Tactician feat. This ability improves further at levels 14 and 17.
+- At 15th level, can use Hardiness once per day
+- At 19th level, gains Greater Called Shot.
+
+OFFENSIVE STANCE: While using an offensive stance, the character gains +2 bonus to damage, but suffers a -2 penalty to attack rolls. At levels 10 and 19, damage bonus and attack roll penalty increase by one, up to +4 bonus to damage and -4 penalty to attack rolls at 19th level. The Fighter remains in this stance for 6 rounds, and cannot combine it with Defensive Stance.
+
+DEFENSIVE STANCE: While using a defensive stance, the character gains +2 bonus to AC, but suffers a -2 penalty to attack rolls. At levels 10 and 19, armor class bonus and attack roll penalty increase by one, up to +4 bonus to AC and -4 penalty to attack rolls at 19th level. The Fighter remains in this stance for 6 rounds, and cannot combine it with Offensive Stance.
+
+CALLED SHOT: When this ability is activated, any attack made within the next round is made at -4 penalty to attack rolls, and the first successful hit is augmented in the following manner (according to targeted area):
+Arm: -2 penalty to target's thac0 for 4 rounds
+Leg: target's movement rate is halved for 4 rounds
+
+IMPROVED CALLED SHOT: At 10th level, Called Shot attacks now have the following additional effects:
+Arm: target must save vs. breath or be unable to attack for 2 rounds
+Leg: target must save vs. death or be knocked down for 1 round
+
+TACTICIAN: Allies within 15 feet from the fighter get +1 bonus to attack rolls. This ability will also grant an additional +1 bonus to AC at 14th level, and a +1 bonus to damage at 17th level. Multiple bonuses from different fighters stack.
+
+HARDINESS: This ability grants the warrior 20% resistance to all forms of damage for 10 rounds.
+
+GREATER CALLED SHOT: Called Shot attacks now have the following additional effects:
+Arm: targets who fail the save vs. breath have their strength reduced to 50% for 1 turn
+Leg: targets who fail the save vs. death have their dexterity reduced to 50% for 1 turn~
+
+
+@2 = ~BARBARIAN:  From the frozen lands of The North and the hellish jungles of Chult in the south come brave, even reckless, warriors. Civilized people call them barbarians or berserkers and suspect them of mayhem, impiety, and atrocities. While undoubtedly feral and unpredictable by the nature of their rages, barbarians are not necessarily uncultured brutes and have time and time again proven their cunning and resourcefulness as well as sheer physical power and endurance. Sometimes, in spite of their aversion to order, barbarians even demonstrate honor.
+
+Barbarians are common within several organizations within Faerun, such as the Uthgardt warriors of the Silver Marches and Icewind Dale, the primal warriors of the Reghed Glacier, the wild tribes of the Chondalwood, and the famous berserkers of Rashemen and its neighboring regions. Contrary to common belief, not all warriors who live outside civilization's borders are barbarians. Only those who embrace the wild and primal ways of the rage can rightly call themselves barbarian, imbuing them with a wild spirit not found amongst other warriors.
+
+Where the fighter has training and discipline, the barbarian has a powerful rage, and once in this whirling frenzy, he becomes a true maelstrom of devastation, better able to defeat his foes and withstand their attacks. These adrenaline surges leave him winded, and he only has the energy for a few such spectacular displays per day, but those few are usually sufficient.
+
+Advantages:
+- Rolls d12 for hit points.
+- Is immune to backstabbing.
+- At 1st level can use Barbarian Rage once per day, and gains one extra use of this ability for every 4 levels thereafter.
+- At 3rd level, gains Cleave.
+- At 5th level, gains Feral Senses.
+- At 6th level, gains Great Cleave.
+- At 9th level, gains Supreme Cleave.
+- At 10th level, gains Greater Rage.
+- At 11th level, gains 10% resistance to slashing, piercing, crushing, and missile damage. At 14th, and 17th level, this increases by an additional 5%.
+- At 15th level, can use Whirlwind Attack once per day.
+- At 19th level, gains Mighty Rage.
+
+Disadvantages:
+- Cannot wear plate mail or full plate armor, nor use large shields.
+- Limited to specialization (++) in weapons.
+- Cannot use Defensive Stance.
+- Cannot use Called Shot.
+- Cannot dual class.
+
+BARBARIAN RAGE: When enraging, the barbarian gains an extra attack per round and a +2 bonus to damage, AC, movement speed and saving throws versus breath, but suffers a -2 penalty to attack rolls. However, the barbarian will also be unable to perform actions that require concentration, like activating item's abilities or remaining hidden.
+After 5 rounds, the enrage effect wears off and the user becomes fatigued for 5 rounds. While fatigued, the barbarian suffers a -2 penalty to AC, damage, and attack rolls and cannot re-enter the enraged state.
+
+CLEAVE: The barbarian can let the momentum from a deadly attack carry his weapon into another foe.
+If the barbarian deals a creature enough damage to kill it, he gets an immediate extra attack for the next round.
+
+FERAL SENSES: the barbarian can fight without penalties in conditions of poor light or total darkness, and even if unable to see. When enraged he can detect invisible creatures within 15 feet.
+
+GREAT CLEAVE: At 6th level when the barbarian gets the extra cleave attack, he can also charge to reach the new target with movement speed increased by +40%.
+
+SUPREME CLEAVE: At 9th level when the barbarian deals a creature enough damage to kill it, he gets two extra attacks instead of one.
+
+GREATER RAGE: At 10th level, the benefits gained from enraging increase to a +3 bonus to damage, AC, movement speed and saving throws versus breath.
+
+WHIRLWIND ATTACK: For 2 rounds, movement and attack rate are doubled, but all attacks are made with a -2 penalty to hit and damage rolls.
+
+MIGHTY RAGE: At 19th level, the benefits gained from enraging increase to a +4 bonus to damage, AC, movement speed and saving throws versus breath.~
+
+
+@3 = ~BERSERKER:  Berserkers are warriors in tune with their animalistic side and, during combat, can achieve an ecstatic state of mind that will enable them to fight longer, harder and more savagely than any humanoid has a right to. Unlike most others, Berserkers usually do not fight to achieve a heroic goal or defeat a loathsome villain. Those are mere excuses, it is the thrill of combat that draws them. For Berserkers, the insanity of battle is like an addictive drug - they must constantly seek out more conflict to feed their craving for battle.
+
+Berserkers are common amongst dwarves, known to them as 'Battleragers'. Members of this elite order are usually covered in scars, runes and tattoos, and scream out battle cries as they charge recklessly forward into battle. They live in the fringes of Dwarven society, kept away from children for their strange ways; heroic stories are told about them, but the Battlerager is short lived, having full belief that if they die, the Dwarven gods of battle will bring them back stronger than before. Berserkers are never lawful. They may be honorable, but at heart they are wild. This wildness is their strength, and it could not live in a lawful soul. At best, chaotic berserkers are free and expressive. At worst, they are thoughtlessly destructive.
+
+Berserkers tend to be barbarian-like in nature, but not always. Sometimes it is a conscious choice that a warrior in training makes, though then resisting the urge of battle becomes increasingly harder. Regardless, opponents on the battlefield will be unsettled when they see the savage elements of the berserker's personality.
+
+Advantages:
+- Can use Berserker Rage once per day per every 4 levels, starting with one use at level one.
+- At 5th level, gains Intimidating Rage.
+- At 10th level, gains Greater Rage.
+- At 11th level, the berserker is able to regain 1 hit point every 3rounds. At 14th, and 17th level, the hit points restored increase by 1.
+- At 15th level, can use Power Attack once per day.
+- At 19th level, gains Mighty Rage.
+
+Disadvantages:
+- May go berserk
+- Cannot use missile weapons.
+- Cannot use Defensive Stance.
+- Cannot use Called Shot.
+
+BERSERKER RAGE: When enraging, the berserker gains 10 temporary hit points, and a +2 bonus to attack rolls, damage, and saving throws versus death, but suffers a -2 penalty to AC and saving throws versus breath. While enraged, the berserker is immune to mind-affecting spells and abilities like charm, confusion, fear, feeblemind, hold, and sleep. Furthermore, an enraged berserker cannot be entangled, paralyzed, pinned or stunned. However, the berserker will also be unable to perform actions that require concentration, like casting spells or using thieving skills.
+After 5 rounds, the enrage effect wears off and the user becomes fatigued for 5 rounds. While fatigued, the berserker suffers a -2 penalty to AC, damage and attack rolls, and cannot re-enter the enraged state.
+
+FRENZY: each successful hit on an opponent has a 5% chance to make the Berserker enter a frenzy. While frenzied, he fights with reckless abandon, and blindly attack any he perceives as foe to the best of his ability. For 2 rounds, he gains +2 bonus to hit and damage rolls and an additional attack per round, but suffers -2 penalty to armor class and saves vs. breath.
+While enraged the chance to enter a frenzy is increased by 20% per hit.
+
+INTIMIDATING RAGE: berserker's fury engenders fear in his enemies. While enraged, any opponent within 15 feet must save vs. spell or suffer -2 penalty to attack rolls.
+
+GREATER RAGE: At 10th level, the benefits gained from enraging increase to 20 temporary hit points, and a +3 bonus to attack rolls, damage and saving throws versus death.
+
+POWER ATTACK: For 2 rounds, each strike is so so forceful that it stuns the opponent for 2 rounds unless a save vs. death at a -4 penalty is made.
+
+MIGHTY RAGE: At 19th level, the benefits gained from enraging increase to 30 temporary hit points, and a +4 bonus to attack rolls, damage and saving throws versus death.~
+
+
+@4 = ~KENSAI:  Kensai is the original Kara-Turian name of what most people in Faerun would call, a Weapon Master. These fighters are trained in an ancient school of martial fighting which uses an esoteric force known as ki to increase the lethality in combat. A Weapon Master's goal is to unite his weapon with his body, and be able to use it without conscious effort as naturally as he would use any other limb. For such a fighter, the perfection of ki is found in the complete mastery of body, mind, weapon, and will.
+
+Weapons Masters are often held in high regard, especially in Kara-Tur, where they are known as Kensai - 'sword saints' - but are similarly revered among the moon elves of Evereska. These warriors are devoted to refine their skills and their mind following strict and severe trainings, and are often incredibly disciplined as a result. Thus the path of the Weapon Master is not suited to characters of chaotic nature.
+
+When wielding their favored weapons Weapon Masters exhibit an uncanny amount of control and finesse, striking with more accuracy blows that are more lethal than those of any other warrior. They are deadly and fast, and are trained to fight without encumbrance, as they consider armor the crutch of the martially unskilled.
+
+Advantages:
+- At 1st level can use Ki Strike once per day, and gains one extra use of this ability for every 4 levels thereafter.
+- At 1st level, gains +1 to hit and damage with any melee weapon, and an additional +1 every 4 levels, up to +5 at 16th level.
+- At 1st level, gains +2 bonus to AC vs. melee weapons. At 11th, 14th, and 17th level, this increases by an additional +1 bonus to AC.
+- At 5th level, gains +2 bonus to weapon speed factor
+- At 10th level, gains Enduring Ki.
+- At 15th level, can use Deathblow once per day.
+- At 19th level, gains Perfected Ki.
+
+Disadvantages:
+- Cannot wear armors, gauntlets, or helmets, nor use shields.
+- Cannot use missile weapons.
+- Cannot use Offensive Stance.
+- Cannot use Called Shot.
+
+KI STRIKE: With this ability the Kensai focuses his Ki for a short time, allowing him to deal maximum damage on each hit for 1 round.
+
+ENDURING KI: At 10th level Ki Strike lasts for 2 rounds.
+
+DEATHBLOW: during the round when this ability is activated the warrior takes a -4 penalty to attack rolls, but the first successful melee attack will instantly slay any creature struck unless a save vs. death is made.
+
+For the next 2 rounds, any creature of 10th level or lower is instantly killed when struck by the warrior.
+
+PERFECTED KI: At 10th level Ki Strike lasts for 3 rounds.~
+
+
+@5 = ~WIZARD SLAYER:  Magic is evil. Magic tempts. Magic corrupts. Wizard Slayers believe that mortals are too irresponsible to wield magic, and thus train their body and their mind to fight those foolish users. Wizard Slayers can take up any standard or philosophy, though they tend more toward chaos than law. Evil Wizard Slayers hunt down and kill the most powerful users of magic that they can find, as if to demonstrate the ultimate weakness of the wizard and the sorcerer. Good Wizard Slayers commit themselves to expunging evil sorcery from their world, but they too see themselves as examples of how mundane strength can conquer foul enchantments.
+
+Though Wizard Slayers are well aware of the dangers of magic and won't succumb to its siren call of power, some eventually learn to tolerate their companions' magic. A few claim that they are leading by example; others rationalize that only by consorting with lesser villains they can defeat greater ones; only a handful accept that in the right hands magic can even be used to good ends.
+
+Wizard Slayers are excellent fighters, but they sacrifice extensive martial trainings preferring to dedicate themselves to anti-magic skills. These warriors become innately resistant to magic, and develop abilities which allow them to withstand, hamper, and slain any spellcaster who dares to cross their path.
+
+Advantages:
+- Has +2 bonus to saves vs. spell.
+- At 1st level can use Disruptive Strike once per day, and gains one extra use of this ability for every 4 levels thereafter.
+- At 1st level can use Inner Focus once per day, and gains one extra use of this ability at 10th and 19th level.
+- At 5th level, gains Magical Defense.
+- At 10th level gains Breaching Strike and Improved Inner Focus.
+- At 11th level gains 10% resistance to magic. At 14th, and 17th level, this increases by an additional 5%.
+- At 15th level can use Resist Magic ability once per day.
+- At 19th level gains Greater Inner Focus.
+
+Disadvantages:
+- Cannot wear medium or heavy armors, nor use large or medium shields.
+- Cannot use neither Offensive Stance nor Defensive Stance.
+- Cannot use Called Shot.
+- Cannot dual to mage classes.
+
+DISRUPTIVE STRIKE: during the round when this ability is activated a successful melee or ranged hit on an arcane spellcaster imposes a non cumulative 50% spell failure penalty, which will last for the following 3 rounds.
+
+INNER FOCUS: concentrating all his fortitude, agility and mental resistance, the wizard slayer is able to withstand, dodge or resist almost any type of magical threat. During the round when this ability is activated, the wizard slayer is immune to all spells of 4th level or lower.
+
+MAGICAL DEFENSE: a wizard slayer's constant training in countering arcane spells manifests itself as a +2 bonus to all saves made against spells cast by practitioners of arcane magic.
+
+BREACHING STRIKE: when using Disruptive Stike the wizard slayer is now able to break through the magical defenses of arcane spellcasters. Each successful hit removes one combat protection from his target.
+
+IMPROVED INNER FOCUS: when using Inner Focus, the wizard slayer is now immune to all spells of 7th level or lower.
+
+RESIST MAGIC:
+This ability grants the warrior additional 50% magic resistance for 5 rounds.
+
+GREATER INNER FOCUS: when using Inner Focus, the wizard slayer is now immune to all spells up to 9th level ones.~
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+/*------ Abilities ------*/
+
+@101 = ~Called Hit~
+@102 = ~Disarm~
+@103 = ~Knockdown~
+@104 = ~Offensive Stance~
+@105 = ~Defensive Stance~
+@106 = ~Barbarian Rage~
+@107 = ~Berserker Rage~
+@108 = ~Ki Strike~
+@109 = ~Disrupting Strike~
+@110 = ~Inner Focus~
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+/*------ High Level Abilities ------*/
+
+@1001 = ~Whirlwind Attack~
+@1002 = ~Whirlwind Attack
+This ability allows the warrior to unleash a flurry of super-fast blows. For 2 rounds, movement and attack rate are doubled, but all attacks are made with a -2 penalty to hit and damage rolls.~
+@1003 = ~Greater Whirlwind Attack~
+@1004 = ~Greater Whirlwind Attack
+A more powerful version of the Whirlwind Attack, Greater Whirlwind gives the fighter the same bonuses without penalties.
+
+Requires: Whirlwind Attack~
+@1005 = ~Deathblow~
+@1006 = ~Deathblow
+During the round when this ability is activated the warrior takes a -4 penalty to attack rolls, but the first successful melee attack will instantly slay any creature struck unless a save vs. death is made.~
+@1007 = ~Greater Deathblow~
+@1008 = ~Greater Deathblow
+Like Deathblow, this ability allows the warrior to vanquish lesser foes with a single blow. When struck with a Greater Deathblow, any creature with 60 hit points or less is instantly killed. Any creature with more than 60 hit points must make a save vs. death or be slayed.
+
+Requires: Deathblow~
+@1009 = ~Resist Magic~
+@1010 = ~Resist Magic
+This ability allows the warrior to temporarily tap a great inner strength and fight off the effects of malevolent magic. For 5 rounds the warrior's magic resistance is increased by 50%.~
+@1011 = ~Critical Strike~
+@1012 = ~Critical Strike
+A high level warrior's intimate knowledge of vital spots on opponents allows him to, once per day, concentrate all of the attacks in one round to strike a vital area every time. With this ability, every attack roll made in the next round is a natural 20, a critical hit.
+
+Requires: Power Attack~
+@1013 = ~Power Attack~
+@1014 = ~Power Attack
+A Power Attack allows the warrior to strike blows so forceful that they stun an opponent for 2 rounds if he fails his save vs. death at a -4 penalty . The ability lasts for 2 rounds.~
+@1015 = ~Hardiness~
+@1016 = ~Hardiness
+Calling upon hidden reserves of strength during times of danger, a warrior can use the Hardiness ability to gain 40% resistance to all forms of physical damage. The ability lasts for 1 round for every 2 levels of the warrior.~
+@1017 = ~War Cry~
+@1018 = ~War Cry
+With a War Cry, the warrior emits a powerful and frightening yell that will leave all opponents in a 30' radius panicked with fear if they don't make their save vs. spell.~
+@1019 = ~Greater Power Attack~
+@1020 = ~Greater Power Attack
+With the Smite ability, the warrior gains the ability to strike a mighty blow, knocking an opponent back for a considerable distance and stunning the opponent for 1 round. All attacks made in the first round are critical hits. The ability lasts for 2 rounds.
+
+Large creatures such as a dragons or giants will not be knocked back or stunned.
+
+Requires: Power Attack, Critical Strike~

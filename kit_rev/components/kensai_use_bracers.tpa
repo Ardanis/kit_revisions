@@ -1,0 +1,121 @@
+INCLUDE ~kit_rev/lib/compatibility.tpa~
+INCLUDE ~kit_rev/lib/descriptions.tpa~
+INCLUDE ~kit_rev/lib/usability_description.tpa~
+
+//////////////////////////////////////////////
+//  kit description
+
+COPY_EXISTING kitlist.2da override
+  READ_2DA_ENTRY 3 4 9 desc
+  SET_2DA_ENTRY 3 4 9 ~kensai_bracer~
+  GET_STRREF desc kensai
+  INNER_PATCH_SAVE bracer ~%kensai%~ BEGIN
+    SPRINT t1 @100413
+    SPRINT t2 @100414
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+  REPLACE ~kensai_bracer~ ~%bracer%~
+
+//////////////////////////////////////////////
+//  descriptions
+
+DEFINE_PATCH_MACRO kensai_bracers BEGIN
+  SPRINT add_class @100415
+  SPRINT catch_class @100416
+  LPF usable_desc INT_VAR make_usable=1 add_where=0 STR_VAR add_class catch_class END
+END
+
+//////////////////////////////////////////////
+//  bracer/glove list
+
+ACTION_DEFINE_ARRAY bracers BEGIN
+  ~AGBRAC01~  // Bracelet of Wisdom (Aurora's Shoes and Boots)
+  ~ARBRAC~    // Bracers of Defense AC 2 (Region of Terror)
+  ~BRAC01~    // Bracers of Defense AC 8
+  ~BRAC02~    // Bracers of Defense AC 7
+  ~BRAC03~    // Bracers of Defense AC 6
+  ~BRAC05~    // Bracers
+  ~BRAC12~    // Bracers
+  ~BRAC13~    // Bracers of Defense AC 5
+  ~BRAC14~    // Bracers of Defense AC 4
+  ~BRAC15~    // Bracers of Defense AC 3
+  ~BRAC16~    // Bracers of the Blinding Strike
+  ~BRAC17~    // Gloves of the Burglar
+  ~BRAC18~    // Gloves of Missile Snaring
+  ~BRAC22~    // Paladin's Bracers
+  ~BRAC23~    // Blessed Bracers
+  ~BRAC24~    // Bard's Gloves
+  ~BRAC25~    // Wondrous Gloves
+  ~BRAC26~    // Bands of Focus
+  ~BRAC74~    // Gloves of ???? (KWolf)
+  ~BRACWC~    // Bracers of the Wizard Champion (Region of Terror)
+  ~C2BRAC01~  // Gloves of the Master Thief (Item Upgrade: Shadows Of Amn Item Upgrades)
+  ~CBBRACRV~  // Bracers of Revelation
+  ~CBILMATA~  // Holy Bonds of Ilmater (Check the Bodies)
+  ~CBXTLTCC~  // Blessed Bracers of Lathander (Check the Bodies)
+  ~CMTUBR02~  // Mage Gloves (The Undying)
+  ~CMTUBR03~  // Fighter's Bracers (The Undying)
+  ~DEITM102~  // Kandalmar's Bracers (Reign of Virtue (ToB))
+  ~DRAGBRCX~  // Silver Dragon Bracers
+  ~DSBRAC01~  // Otrad Atwah: 'Gloves of the Magi' (DSotSC)
+  ~DSBRAC02~  // Gift of the Woods (DSotSC)
+  ~DSBRAC03~  // Mage's Bracers (DSotSC)
+  ~DSDRGSKN~  // Dragon Skin Bracers (DSotSC)
+  ~ENTERISB~  // Kohrim's Bracers (Region of Terror)
+  ~ESLIBRA0~  // Veteran Pickpocketer's Gloves
+  ~FWBRAC01~  // Bracers of Infinite Daggers +3 (Revised Forgotten Wars Projects: Item Pack)
+  ~FWBRAC02~  // Bracers of Infinite Daggers +5 (Revised Forgotten Wars Projects: Item Pack)
+  ~FWBRAC03~  // Bracers of the Summoner (Revised Forgotten Wars Projects: Item Pack)
+  ~FWBRAC05~  // Bracers of the Sage (Revised Forgotten Wars Projects: Item Pack)
+  ~FWBRAC06~  // Gloves of Spell Speed (Revised Forgotten Wars Projects: Item Pack)
+  ~KEDL~      // Silver Bracers of Kedl (Tortured Souls)
+  ~M#GFEAT~   // Gloves of Feather Touch (Amber)
+  ~MAU011~    // The Warrior's Arm
+  ~NEWBR01~   // Bracers of Yuan-Ti (Region of Terror)
+  ~NTBRAC01~  // Gloves of Master Thievery (NTotSC)
+  ~O!BOM024~  // Laiwethel's Gloves of Extraordinary Arcane Skills (Boards of Magick item pack!)
+  ~O!BOM026~  // Colthrun's Blinding Gloves (Boards of Magick item pack!)
+  ~O!TALI09~  // Laiwethel's Gloves of Extraordinary Arcane Skills (Boards of Magick item pack!)
+  ~O#DCBRA1~  // Bracers of Defense AC +2 (Dungeon Crawl)
+  ~PITGLOVZ~  // Pit Gloves
+  ~PSBRAC01~  // Gloves of Spell Weaving (PlanarSphereMod)
+  ~QUAG~      // Gloves of Detection
+  ~RTT011~    // Bracers of Dexterity (RTT Item Pack)
+  ~RTT012~    // King Strohm's Bracers (RTT Item Pack)
+  ~RTT018~    // Bracers of the Mephit (RTT Item Pack)
+  ~RTT028~    // Gloves of Strength (RTT Item Pack)
+  ~S#BRAC03~  // Improved Gloves of Healing
+  ~SGBRAC01~  // Archmage's gloves (Munchmod)
+  ~SGBRAC03~  // Quicksilver bracers (Munchmod)
+  ~TSJBRAC~   // Tsujatha's bridal bracelet.
+  ~TZBRAC01~  // Bracers of Genius
+  ~TZBRAC02~  // Magnet Bracers
+  ~U#BRAC01~  // Mits of Shaiman (Ruad Ro'fhessa (ToB))
+  ~U#BRAC02~  // Fluent Fingers (Ruad Ro'fhessa (SoA))
+  ~UBGLOVE1~  // Gloves of Pick Pocketing (BG1UB: Shilo Chen and the Ogre-Magi)
+END
+
+ACTION_IF (!comp_ir) BEGIN
+  OUTER_SPRINT $bracers(~BRAC20~) ~BRAC20~ // Gloves of Healing
+END
+
+ACTION_IF (!comp_cursed) BEGIN
+  OUTER_SPRINT $bracers(~BRAC11~) ~BRAC11~ // Bracers of Binding
+END
+
+//////////////////////////////////////////////
+//  patching
+
+ACTION_PHP_EACH bracers AS i => bracer BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%bracer%.itm~) BEGIN
+    COPY_EXISTING ~%bracer%.itm~ override
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        // make usable by kensais
+        WRITE_BYTE 0x2f (THIS BAND 0b11111011)
+        // update description
+        SPRINT text_update ~kensai_bracers~
+        LAUNCH_PATCH_MACRO ~update_item_descriptions~
+      END
+      BUT_ONLY
+  END
+END
