@@ -1,0 +1,15 @@
+*.7z
+*.rar
+*.zip
+*.debug
+*.log
+*.exe
+!TobExLoader.exe
+setup-kit_rev
+setup-kit_rev.command
+kit_rev/debug/*
+!kit_rev/debug/debug.txt
+kit_rev/backup/*
+!kit_rev/backup/g3.ico
+!kit_rev/backup/g3_sfx.ico
+!kit_rev/backup/g3readme.css

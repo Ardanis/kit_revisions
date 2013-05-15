@@ -1,10 +1,10 @@
-BACKUP ~kit_rev\backup~ // location to store files for uninstall purposes
+BACKUP ~kit_rev/backup~ // location to store files for uninstall purposes
 
 AUTHOR ~marco.montagnoli83@hotmail.it~ // display email address if install fails
 
-VERSION ~V1 Beta 1~
+VERSION ~Beta 4~
 
-/* README ~kit_rev\readme-kit_rev.html~ */
+/* README ~kit_rev/readme-kit_rev.html~ */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,8 +12,8 @@ VERSION ~V1 Beta 1~
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-LANGUAGE ~English~ ~languages\english~
-                   ~kit_rev\languages\english\english.tra~
+LANGUAGE ~English~ ~languages/english~
+                   ~kit_rev/languages/english/english.tra~
                    ~kit_rev/languages/english/description_updates.tra~
 
 
@@ -22,11 +22,12 @@ LANGUAGE ~English~ ~languages\english~
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/*------Kit Revisions------*/
+/*------ KIT REVISIONS ------*/
 
 BEGIN ~Kit Revisions by Demivrgvs~
+DESIGNATED 0
 
-COPY    ~kit_rev/data/revised_grandmastery~    ~override~  // Grandmastery Revision
+INCLUDE ~kit_rev/lib/kit_strref.tpa~
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
@@ -58,17 +59,17 @@ COPY ~kit_rev/data/fighters/true_fighter/dvcl114.spl~     ~override~  // Defensi
 
 ADD_PROJECTILE ~kit_rev/data/fighters/true_fighter/dvcl115a.pro~  // Party-friendly 15' aura
 COPY ~kit_rev/data/fighters/true_fighter/dvcl115a.spl~     ~override~  // Tactician
-  WRITE_SHORT 0x98 %dvcl115a%
+  WRITE_SHORT 0x98 dvcl115a
 COPY ~kit_rev/data/fighters/true_fighter/dvcl115a.eff~     ~override~
 COPY ~kit_rev/data/fighters/true_fighter/dvcl115a.spl~     ~override~
 
 COPY ~kit_rev/data/fighters/true_fighter/dvcl116a.spl~     ~override~  // Expert Tactician
-  WRITE_SHORT 0x98 %dvcl115a%
+  WRITE_SHORT 0x98 dvcl115a
 COPY ~kit_rev/data/fighters/true_fighter/dvcl116a.eff~     ~override~
 COPY ~kit_rev/data/fighters/true_fighter/dvcl116a.spl~     ~override~
 
 COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.spl~     ~override~  // Master Tactician
-  WRITE_SHORT 0x98 %dvcl115a%
+  WRITE_SHORT 0x98 dvcl115a
 COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.eff~     ~override~
 COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.spl~     ~override~
 
@@ -77,7 +78,8 @@ COPY ~kit_rev/data/fighters/true_fighter/dvcl117a.spl~     ~override~
 
 /*------ BARBARIAN ------*/
 
-STRING_SET ~45869~ @2 // Barbarian description
+LAF ~GET_KIT_STRREF~ STR_VAR kit_name = ~barbarian~ RET kit_strref END
+STRING_SET_EVALUATE kit_strref @2 // Barbarian description
 COPY ~kit_rev/data/fighters/barbarian/clabfi05.2da~     ~override~
 
 // COPY ~kit_rev/data/fighters/barbarian/spcl151.spl~     ~override~  // Fast Movement
@@ -86,7 +88,7 @@ COPY ~kit_rev/data/fighters/barbarian/spcl152.spl~     ~override~  // Barbarian 
   SAY NAME1 @106
 ADD_PROJECTILE ~kit_rev/data/fighters/barbarian/dvcl152.pro~  // Enemy-only 15' aura
 COPY ~kit_rev/data/fighters/barbarian/dvcl152.spl~     ~override~  // Feral Senses (Scent)
-  WRITE_SHORT 0x98 %dvcl152%
+  WRITE_SHORT 0x98 dvcl152
 COPY ~kit_rev/data/fighters/barbarian/dvcl152.eff~     ~override~
 
 COPY ~kit_rev/data/fighters/barbarian/spcl153.spl~     ~override~  // Physical Resistance (+10%)
@@ -105,13 +107,14 @@ COPY ~kit_rev/data/fighters/barbarian/dvcl156.spl~     ~override~  // Blind-Figh
 
 /*------ BERSERKER ------*/
 
-STRING_SET ~25201~ @3 // Berserker description
+LAF ~GET_KIT_STRREF~ STR_VAR kit_name = ~berserker~ RET kit_strref END
+STRING_SET_EVALUATE kit_strref @3 // Berserker description
 COPY ~kit_rev/data/fighters/berserker/clabfi02.2da~     ~override~
 
 COPY ~kit_rev/data/fighters/berserker/spcl321.spl~     ~override~  // Berserker Rage
   SAY NAME1 @107
 COPY ~kit_rev/data/fighters/berserker/dvcl321.spl~     ~override~  // Intimidating Rage
-  WRITE_SHORT 0x98 %dvcl152%
+  WRITE_SHORT 0x98 dvcl152
 COPY ~kit_rev/data/fighters/berserker/dvcl321.eff~     ~override~
 COPY ~kit_rev/data/fighters/berserker/spcl321d.spl~     ~override~  // post-rage fatigue
 
@@ -127,7 +130,8 @@ COPY ~kit_rev/data/fighters/berserker/dvcl323b.eff~     ~override~ // 20% chance
 
 /*------ WEAPON MASTER ------*/
 
-STRING_SET ~25204~ @4 // Kensai description
+LAF ~GET_KIT_STRREF~ STR_VAR kit_name = ~kensai~ RET kit_strref END
+STRING_SET_EVALUATE kit_strref @4 // Kensai description
 COPY ~kit_rev/data/fighters/kensai/clabfi04.2da~     ~override~
 
 COPY ~kit_rev/data/fighters/kensai/spcl141.spl~     ~override~  // Weapon Focus
@@ -145,7 +149,8 @@ COPY ~kit_rev/data/fighters/kensai/spcl144.spl~     ~override~  // Ki Strike
 
 /*------ WIZARD SLAYER ------*/
 
-STRING_SET ~25203~ @5 // Wizard Slayer description
+LAF ~GET_KIT_STRREF~ STR_VAR kit_name = ~wizard_slayer~ RET kit_strref END
+STRING_SET_EVALUATE kit_strref @5 // Wizard Slayer description
 COPY ~kit_rev/data/fighters/wizard_slayer/clabfi03.2da~     ~override~
 
 COPY ~kit_rev/data/fighters/wizard_slayer/dvcl131.spl~     ~override~
@@ -166,8 +171,6 @@ COPY ~kit_rev/data/fighters/wizard_slayer/dvcl135.spl~     ~override~  // Iron W
 
 COPY ~kit_rev/data/fighters/wizard_slayer/dvcl136.spl~     ~override~  // Magical Defense
 
-//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
-////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
@@ -215,3 +218,15 @@ COPY ~kit_rev/data/HLAs/spcl909.spl~     ~override~  // Greater Power Attack ("r
 INCLUDE ~kit_rev/components/kensai_use_bracers.tpa~
 INCLUDE ~kit_rev/components/usability_patches.tpa~
 
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------ REVISED GRANDMASTERY ------*/
+
+BEGIN ~Revised Grandmastery~
+DESIGNATED 100
+
+COPY ~kit_rev/data/revised_grandmastery~ ~override~  // Grandmastery Revision

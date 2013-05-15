@@ -9,42 +9,31 @@ Class Features:
 - Can achieve grandmastery (+++++) in any weapon proficiency.
 - Can use all types of armor.
 - At 1st level, can use Offensive Stance and Defensive Stance at will.
-- At 4th level, can use Called Shot once per day, and gains one extra use of this ability for every 4 levels thereafter, up to 4 times per day at 16th level.
+- At 4th level, can use Called Shot once per day, and gains one extra use of this ability for every 4 levels thereafter.
 - At 5th level, becomes proficient (+) in the use of all types of weapons.
 - At 7th level, gains an additional half attack per round. This increases to a whole attack per round bonus at 13th level.
 - At 10th level, gains Improved Called Shot.
-- At 11th level, gains the Tactician feat.
-- At 14th level, gains the Expert Tactician feat.
+- At 11th level, gains the Tactician feat. This ability improves further at levels 14 and 17.
 - At 15th level, can use Hardiness once per day
-- At 17th level, gains the Master Tactician feat.
 - At 19th level, gains Greater Called Shot.
 
-OFFENSIVE STANCE:
-While using an offensive stance, the character gains +2 bonus to damage, but suffers a -2 penalty to attack rolls. At levels 10 and 19, damage bonus and attack roll penalty increase by one, up to +4 bonus to damage and -4 penalty to attack rolls at 19th level. The Fighter remains in this stance for 6 rounds, and cannot combine it with Defensive Stance.
+OFFENSIVE STANCE: While using an offensive stance, the character gains +2 bonus to damage, but suffers a -2 penalty to attack rolls. At levels 10 and 19, damage bonus and attack roll penalty increase by one, up to +4 bonus to damage and -4 penalty to attack rolls at 19th level. The Fighter remains in this stance for 6 rounds, and cannot combine it with Defensive Stance.
 
-DEFENSIVE STANCE:
-While using a defensive stance, the character gains +2 bonus to AC, but suffers a -2 penalty to attack rolls. At levels 10 and 19, armor class bonus and attack roll penalty increase by one, up to +4 bonus to AC and -4 penalty to attack rolls at 19th level. The Fighter remains in this stance for 6 rounds, and cannot combine it with Offensive Stance.
+DEFENSIVE STANCE: While using a defensive stance, the character gains +2 bonus to AC, but suffers a -2 penalty to attack rolls. At levels 10 and 19, armor class bonus and attack roll penalty increase by one, up to +4 bonus to AC and -4 penalty to attack rolls at 19th level. The Fighter remains in this stance for 6 rounds, and cannot combine it with Offensive Stance.
 
-CALLED SHOT: An experienced Fighter can aim his attacks more precisely, targeting a particular part of the body in order to gain various combat advantages from the attacks.
-When this ability is activated, any attack made within the next round is made at -4 penalty to attack rolls, and the first successful hit is augmented in the following manner (according to targeted area):
+CALLED SHOT: When this ability is activated, any attack made within the next round is made at -4 penalty to attack rolls, and the first successful hit is augmented in the following manner (according to targeted area):
 Arm: -2 penalty to target's thac0 for 4 rounds
 Leg: target's movement rate is halved for 4 rounds
 
-IMPROVED CALLED SHOT: Aveteran Fighter can land even more precise and lethal hits.
-Called Shot attacks now have the following additional effects:
+IMPROVED CALLED SHOT: At 10th level, Called Shot attacks now have the following additional effects:
 Arm: target must save vs. breath or be unable to attack for 2 rounds
 Leg: target must save vs. death or be knocked down for 1 round
 
-TACTICIAN: Allies within 15 feet from the fighter get +1 bonus to attack rolls. Multiple bonuses from different fighters stack.
-
-EXPERT TACTICIAN: Allies within 15 feet from the fighter get +1 bonus to AC.
+TACTICIAN: Allies within 15 feet from the fighter get +1 bonus to attack rolls. This ability will also grant an additional +1 bonus to AC at 14th level, and a +1 bonus to damage at 17th level. Multiple bonuses from different fighters stack.
 
 HARDINESS: This ability grants the warrior 20% resistance to all forms of damage for 10 rounds.
 
-MASTER TACTICIAN: Allies within 15 feet from the fighter get +1 bonus to damage rolls.
-
-GREATER CALLED SHOT:
-Called Shot attacks now have the following additional effects:
+GREATER CALLED SHOT: Called Shot attacks now have the following additional effects:
 Arm: targets who fail the save vs. breath have their strength reduced to 50% for 1 turn
 Leg: targets who fail the save vs. death have their dexterity reduced to 50% for 1 turn~
 
